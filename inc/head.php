@@ -42,11 +42,14 @@
               Cart
             </a>
           </li>
+            <li><a href="logout.php">Logout</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
   <div class="container-fluid text-right">
-    <strong>Hello Wilder !</strong>
+    <strong>Hello <?php if(isset($_SESSION['name'])) {
+        echo $_SESSION['name'];
+        };?> !</strong>
   </div>
 </header>
